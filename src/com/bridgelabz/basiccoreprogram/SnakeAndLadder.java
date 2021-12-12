@@ -13,10 +13,12 @@ public class SnakeAndLadder {
     public static void main(String[] args) {
         System.out.println(" Welcome to the Game ");
         int position = 0;
+        int diceRoll = 0;
 
         // Player reaches till winning position loop
         while(position < WINNING_POS) {
 
+            diceRoll++;
             // Generate Random Num from 1 to 6
             Random random = new Random();
             int diceNo = random.nextInt(6) + 1;
@@ -40,6 +42,7 @@ public class SnakeAndLadder {
                 }
             }
         }
-        System.out.println(" \nHoorray You won!!!");
+        System.out.println("\n The No.of times dice was rolled is : " + diceRoll);
+        System.out.println(" Hoorray You won!!!");
     }
 }
