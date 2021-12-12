@@ -15,7 +15,7 @@ public class SnakeAndLadder {
         int position = 0;
 
         // Player reaches till winning position loop
-        while(position <= WINNING_POS) {
+        while(position < WINNING_POS) {
 
             // Generate Random Num from 1 to 6
             Random random = new Random();
@@ -36,11 +36,10 @@ public class SnakeAndLadder {
                     if (position < 0){
                         position = 0;
                     }
-                    System.out.println("Oppps Bitten by Snake, Position: " + position);
+                    System.out.println(" Oppps Bitten by Snake, Position: " + position);
                 }
             }
-
-            System.out.println(" Hoorray You won!!!");
         }
+        System.out.println(" \nHoorray You won!!!");
     }
 }
